@@ -79,8 +79,8 @@ var brokenSpendTransaction = getSpendTransaction(LOCK_UNTIL_BLOCK, 0xffffffff); 
 
 var result = {
   fromAddress: privateKey.toAddress().toString(),
-  p2shAddress: address.toString(),
-  redeemScript: scriptPubKey.toString(),
+  toAddress: address.toString(),
+  scriptPubKey: scriptPubKey.toString(),
   freezeTransaction: {
     txid: freezeTrans.id,
     raw: freezeTrans.serialize(true),
